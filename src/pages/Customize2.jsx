@@ -6,7 +6,7 @@ import { useState } from "react";
 import { IoArrowBackOutline } from "react-icons/io5";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { UserDataContext } from "../Context/UserContext";
+import { UserDataContext } from "../context/UserContext";
 
 
 function Customize2(){

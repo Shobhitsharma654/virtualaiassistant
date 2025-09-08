@@ -1,6 +1,6 @@
 
 import React, { useContext, useEffect, useRef, useState } from "react"
-import { UserDataContext } from "../Context/UserContext";
+import { UserDataContext } from "../context/UserContext";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import aiImg from "../assets/AI.gif"

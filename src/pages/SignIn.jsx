@@ -4,7 +4,7 @@ import React, { useState, useContext } from "react";
 import bg from "../assets/auth_bg.jpg";
 import { PiEyeBold, PiEyeClosedBold } from "react-icons/pi";
 import { useNavigate } from "react-router-dom";
-import { UserDataContext } from "../Context/UserContext";
+import { UserDataContext } from "../context/UserContext";
 import axios from "axios";
 
 function SignIn() {

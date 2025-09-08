@@ -2,7 +2,7 @@
 import React from "react";
 import { useContext } from "react";
 import { useDeferredValue } from "react";
-import { UserDataContext } from "../Context/UserContext";
+import { UserDataContext } from "../context/UserContext";
 
 
 function Card({ image }) {
