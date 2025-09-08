@@ -70,9 +70,9 @@ if (!data || !data.type) {
 
     const handleLogOut = async ()=>{
         try {
-            const result = await axios.get(`${serverUrl}/api/auth/logOut`, {withCredentials:true})
+            const result = await axios.get(`${serverUrl}/api/auth/logout`, {withCredentials:true})
             setUserData(null)
-            navigate("/signIn")
+            navigate("/signin")
         } catch (error) {
             setUserData(null)
             console.log(error);
