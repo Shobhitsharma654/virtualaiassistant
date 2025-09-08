@@ -23,7 +23,7 @@ function SignIn() {
     setLoading(true);
     try {
       await axios.post(
-        `${serverUrl}/api/auth/logIn`,
+        `${serverUrl}/api/auth/login`,
         { email, password },
         { withCredentials: true }
       );
