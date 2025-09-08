@@ -17,7 +17,7 @@ const [userData, setUserData]= useState(null)
 
  const handleCurrentUser = async()=>{
     try {
-       let result = await axios.post(serverUrl + "/api/user/currentuser", {},{
+       let result = await axios.post(serverUrl + "/api/user/currentuser",{
   withCredentials:true});
 
 setUserData(result.data)
