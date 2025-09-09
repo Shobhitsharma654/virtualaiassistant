@@ -6,7 +6,7 @@ export const UserDataContext = createContext()
 
 function UserContext({children}) {
 
-const serverUrl = "https://virtualbackend.vercel.app"
+const serverUrl = "http://localhost:8000"
 
 
 const [userData, setUserData]= useState(null)
