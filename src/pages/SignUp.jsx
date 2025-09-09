@@ -28,6 +28,7 @@ function SignUp() {
         { withCredentials: true }
       );
       setUserData(result.data);
+       setLoading(false)
       navigate("/Customize");
     } catch (error) {
       console.log(error);
@@ -141,7 +142,7 @@ function SignUp() {
             className="text-white hover:text-black px-2 py-1 rounded transition font-semibold"
             onClick={(e) => {
               e.preventDefault();
-              navigate("/SignIn");
+              navigate("/Signin");
             }}
           >
             Sign In

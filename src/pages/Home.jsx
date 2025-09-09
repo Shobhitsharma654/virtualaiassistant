@@ -447,7 +447,7 @@ if (!data || !data.type) {
                         <button
                             type="button"
                             className="w-[220px] bg-black text-white py-3 rounded-xl font-semibold transition hover:bg-white hover:text-black"
-                            onClick={()=>navigate("/Customize")}
+                            onClick={()=>navigate("/customize")}
                         >
                             Customize Assistant
                         </button>

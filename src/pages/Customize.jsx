@@ -276,7 +276,7 @@ function Customize(){
             </div>
             <div>
                 {selectedImage &&  <button className="relative z-20 min-w-[150px] bg-black text-white py-3 rounded-3xl font-semibold cursor-pointer transition mb-4 hover:bg-white hover:text-black"
-                onClick={()=>navigate("/Customize2")}
+                onClick={()=>navigate("/customize2")}
                 >
                     Next
                 </button>}

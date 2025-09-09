@@ -18,6 +18,7 @@ const [userData, setUserData]= useState(null)
  const handleCurrentUser = async()=>{
     try {
        let result = await axios.get(`${serverUrl}/api/user/currentuser`, { withCredentials: true });
+        console.log("Current user:", result.data); 
 
 setUserData(result.data)
 console.log(result.data)

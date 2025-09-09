@@ -127,7 +127,7 @@ function SignIn() {
             className="text-white hover:text-black px-2 py-1 rounded transition font-semibold"
             onClick={(e) => {
               e.preventDefault();
-              navigate("/SignUp");
+              navigate("/Signup");
             }}
           >
             Sign Up
