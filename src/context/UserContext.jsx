@@ -6,7 +6,7 @@ export const UserDataContext = createContext()
 
 function UserContext({children}) {
 
-const serverUrl = "http://localhost:8000"
+const serverUrl = "https://virtualai-backend.onrender.com"
 
 
 const [userData, setUserData]= useState(null)
