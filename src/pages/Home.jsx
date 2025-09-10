@@ -3,8 +3,7 @@ import React, { useContext, useEffect, useRef, useState } from "react"
 import { UserDataContext } from "../context/UserContext";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import aiImg from "../assets/AI.gif"
-import userImg from "../assets/User.gif"
+
 
 function Home(){
      // Helper for seeded random (for SSR consistency)
