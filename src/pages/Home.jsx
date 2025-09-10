@@ -40,7 +40,7 @@ if (!data || !data.type) {
             window.open(`https://www.google.com/search?q=${query}`,'_blank');
         }
 
-        if(type === 'youtube-search'|| type === 'youtube_play'){
+        if(type === 'youtube-search'|| type === 'youtube-play'){
             const query=encodeURIComponent(userInput)
             window.open(`https://www.youtube.com/results?search_query=${query}`,'_blank');
         }
@@ -197,7 +197,7 @@ if (!data || !data.type) {
             try {
                  if(transcript.toLowerCase().includes(userData.assistantName.toLowerCase())){
                     setAiText("")
-                    setUserText(transcript)
+                    // setUserText(transcript)
                     recognition.stop()
                     isRecognizingRef.current= false
                     setListening(false)
@@ -218,6 +218,7 @@ if (!data || !data.type) {
         }
 
         const greeting = new SpeechSynthesisUtterance(`Hello ${userData.name}, What can I help you with?`);
+
         window.speechSynthesis.speak(greeting)
 
         return ()=>{
